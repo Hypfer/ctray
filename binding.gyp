@@ -17,8 +17,8 @@
             'conditions': [ # Initials checks on tray/Makefile
                 ["OS=='linux'", {
                     "sources": ["src/linux/tray.cc"],
-                    "cflags+": ["-DTRAY_APPINDICATOR=1", "<!@(pkg-config --cflags appindicator3-0.1)"],
-                    "ldflags+": ["<!@(pkg-config --libs appindicator3-0.1)"],
+                    "cflags+": ["-DTRAY_APPINDICATOR=1", "<!@(pkg-config --cflags ayatana-appindicator3-0.1)"],
+                    "ldflags+": ["<!@(pkg-config --libs ayatana-appindicator3-0.1)"],
                 }],
                 ["OS=='win'", {
                     "sources": ["src/win/tray.cc"],

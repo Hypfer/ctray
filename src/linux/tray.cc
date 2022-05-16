@@ -3,7 +3,7 @@
 #include <thread>
 #include <iostream>
 #include <gtk/gtk.h>
-#include <libappindicator/app-indicator.h>
+#include <libayatana-appindicator/app-indicator.h>
 
 int i = 0;
 class Tray : public NapiTray<Tray> {
